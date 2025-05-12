@@ -10,6 +10,20 @@ class B : A() {
         println("Class B")
     }
 }
+/*
+public (default)
+
+private (within the file or class)
+
+protected (subclasses only)
+
+internal (within the module)
+ */
+internal class MyClass {
+    private val secret = "Hidden"
+    protected open val id = 101
+}
+
 
 fun main(){
     val b: B = B()
