@@ -18,6 +18,8 @@ fun main(){
     }
 
     ds()
+    println(greet("avd"))
+    println(sum(5, 3))
 }
 
 fun grade(marks: Int) : Int{
@@ -41,3 +43,6 @@ fun ds(){
     val map: Map<String, Int> = mapOf("avd" to 100, "chuck" to 90)
     println(map)
 }
+
+fun greet(name: String = "Guest") = "Hello, $name"
+val sum = {a:Int, b:Int -> a + b}
