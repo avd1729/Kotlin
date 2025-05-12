@@ -10,4 +10,19 @@ fun main(){
     println(num)
     println(num2)
     println("name is $name , num is $num")
+    println(grade(96))
+}
+
+fun grade(marks: Int) : Int{
+
+    return if (marks < 50) 0
+    else {
+        when {
+            marks >= 91 -> 10
+            marks in 81..90 -> 9
+            marks in 71..80 -> 8
+            else -> 7
+        }
+    }
+
 }
