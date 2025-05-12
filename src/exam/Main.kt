@@ -11,6 +11,11 @@ fun main(){
     println(num2)
     println("name is $name , num is $num")
     println(grade(96))
+
+    for (i in 1..5) {
+        if (i == 3) continue
+        println(i)
+    }
 }
 
 fun grade(marks: Int) : Int{
