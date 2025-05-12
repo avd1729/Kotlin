@@ -16,6 +16,8 @@ fun main(){
         if (i == 3) continue
         println(i)
     }
+
+    ds()
 }
 
 fun grade(marks: Int) : Int{
@@ -29,5 +31,13 @@ fun grade(marks: Int) : Int{
             else -> 7
         }
     }
+}
 
+fun ds(){
+    val fruits = mutableListOf("Apple","Banana")
+    println(fruits)
+    val set: Set<String> = mutableSetOf("")
+    println(set)
+    val map: Map<String, Int> = mapOf("avd" to 100, "chuck" to 90)
+    println(map)
 }
